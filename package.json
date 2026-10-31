@@ -1,0 +1,11 @@
+{
+  "name": "productpulse",
+  "version": "1.0.0",
+  "description": "ProductPulse - Full-stack E-commerce Customer Retention & Churn Prediction System",
+  "scripts": {
+    "start": "python run.py",
+    "dev": "python run.py",
+    "backend": "python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000 --reload",
+    "frontend": "npm --prefix frontend run dev"
+  }
+}
