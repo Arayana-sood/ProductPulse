@@ -1,6 +1,16 @@
 # ProductPulse — Predictive Product & User Analytics Console
 
+[![Live Demo](https://img.shields.io/badge/Demo-Vercel-black?logo=vercel)](https://product-pulse-nine.vercel.app)
+[![API Status](https://img.shields.io/badge/API-Render-brightgreen?logo=render)](https://productpulse-api-tgbe.onrender.com/health)
+[![LinkedIn Post](https://img.shields.io/badge/LinkedIn-Post-blue?logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ProductPulse is an enterprise-grade product intelligence and customer retention platform. It leverages machine learning to analyze customer behavioral sequences, predict churn risk, identify behavioral clusters, provide sensitivity analysis against decision boundaries, and project business impact through retention economics.
+
+🔗 **Project Links & Updates:**
+* **Live Web App:** [ProductPulse on Vercel](https://product-pulse-nine.vercel.app)
+* **Live API Backend:** [ProductPulse API on Render](https://productpulse-api-tgbe.onrender.com) (API Docs: [Swagger UI](https://productpulse-api-tgbe.onrender.com/docs))
+* **LinkedIn Announcement:** [Read the Project Post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
 
 ---
 
@@ -30,6 +40,7 @@ $$\text{Behavior} \longrightarrow \text{Prediction} \longrightarrow \text{Segmen
 * **Backend:** FastAPI, Uvicorn, Python 3.12+.
 * **Machine Learning & Analytics:** Scikit-Learn, Pandas, NumPy, Joblib.
 * **Trained Models:** Linear Support Vector Classifier (`svm_model.pkl`), K-Means (`kmeans.pkl`), PCA (`pca.pkl`), StandardScaler (`scaler.pkl`, `cluster_scaler.pkl`).
+* **Cloud & Deployment:** Render (FastAPI Backend), Vercel (React Frontend).
 
 ---
 
@@ -63,24 +74,35 @@ ProductPulse/
 │   │   └── data/                # Strategy playbooks catalog
 │   ├── package.json
 │   └── vite.config.ts
-├── Data/
-│   └── 2019-Dec.csv             # December aggregated customer feature dataset
+├── run.py                       # Unified one-line launcher for both backend & frontend
+├── ProductPulse_Academic_Project_Report.docx  # Full official academic project report
+├── ProductPulse_Project_Report.md             # Complete academic report in Markdown
 └── README.md
 ```
 
 ---
 
-## 🛠️ Local Setup & Installation
+## 🛠️ Local Setup & Quick Start
 
-### 1. Prerequisites
-* Python 3.10+
-* Node.js 18+ and npm
-
-### 2. Backend Setup
+### ⚡ One-Line Run (Recommended)
+You can start both the FastAPI backend and React frontend with a single command:
 ```bash
-# Navigate to project root
-cd ProductPulse
+python run.py
+```
+*(Or run `npm start` / `.\start.bat`)*
 
+This launcher automatically:
+1. Cleans up any leftover processes on ports `8000` and `5173`.
+2. Starts the FastAPI backend and verifies health.
+3. Starts the React Vite frontend.
+4. Opens your default browser at `http://localhost:5173`.
+
+---
+
+### Manual Setup
+
+#### 1. Backend Setup
+```bash
 # Install Python dependencies
 pip install -r backend/requirements.txt
 
@@ -89,7 +111,7 @@ python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 * Interactive API Documentation: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-### 3. Frontend Setup
+#### 2. Frontend Setup
 ```bash
 # In a new terminal, navigate to the frontend directory
 cd frontend
@@ -121,6 +143,8 @@ npm run dev
 
 ---
 
-## 👤 Author
+## 👤 Author & Connect
+
 * **Arayana Sood**
-* [GitHub Profile](https://github.com/Arayana-sood)
+* **LinkedIn:** [Project Post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
+* **GitHub:** [@Arayana-sood](https://github.com/Arayana-sood)
