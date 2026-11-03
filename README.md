@@ -1,16 +1,16 @@
 # ProductPulse — Predictive Product & User Analytics Console
 
-[![Live Demo](https://img.shields.io/badge/Demo-Vercel-black?logo=vercel)](https://product-pulse-nine.vercel.app)
-[![API Status](https://img.shields.io/badge/API-Render-brightgreen?logo=render)](https://productpulse-api-tgbe.onrender.com/health)
-[![LinkedIn Post](https://img.shields.io/badge/LinkedIn-Post-blue?logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-product--pulse--nine.vercel.app-black?style=for-the-badge&logo=vercel)](https://product-pulse-nine.vercel.app/)
+[![API Status](https://img.shields.io/badge/API-Render-brightgreen?style=for-the-badge&logo=render)](https://productpulse-api-tgbe.onrender.com/health)
+[![LinkedIn Post](https://img.shields.io/badge/LinkedIn-Post-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
+
+> 🌐 **Live Website Link:** [https://product-pulse-nine.vercel.app/](https://product-pulse-nine.vercel.app/)  
+> ⚡ **Live API Service:** [https://productpulse-api-tgbe.onrender.com](https://productpulse-api-tgbe.onrender.com) (API Docs: [Swagger UI](https://productpulse-api-tgbe.onrender.com/docs))  
+> 📢 **LinkedIn Announcement:** [Read on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)  
+
+---
 
 ProductPulse is an enterprise-grade product intelligence and customer retention platform. It leverages machine learning to analyze customer behavioral sequences, predict churn risk, identify behavioral clusters, provide sensitivity analysis against decision boundaries, and project business impact through retention economics.
-
-🔗 **Project Links & Updates:**
-* **Live Web App:** [ProductPulse on Vercel](https://product-pulse-nine.vercel.app)
-* **Live API Backend:** [ProductPulse API on Render](https://productpulse-api-tgbe.onrender.com) (API Docs: [Swagger UI](https://productpulse-api-tgbe.onrender.com/docs))
-* **LinkedIn Announcement:** [Read the Project Post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
 
 ---
 
@@ -40,7 +40,7 @@ $$\text{Behavior} \longrightarrow \text{Prediction} \longrightarrow \text{Segmen
 * **Backend:** FastAPI, Uvicorn, Python 3.12+.
 * **Machine Learning & Analytics:** Scikit-Learn, Pandas, NumPy, Joblib.
 * **Trained Models:** Linear Support Vector Classifier (`svm_model.pkl`), K-Means (`kmeans.pkl`), PCA (`pca.pkl`), StandardScaler (`scaler.pkl`, `cluster_scaler.pkl`).
-* **Cloud & Deployment:** Render (FastAPI Backend), Vercel (React Frontend).
+* **Cloud & Hosting:** Render (FastAPI Backend), Vercel (React Frontend).
 
 ---
 
@@ -85,7 +85,7 @@ ProductPulse/
 ## 🛠️ Local Setup & Quick Start
 
 ### ⚡ One-Line Run (Recommended)
-You can start both the FastAPI backend and React frontend with a single command:
+You can start both the FastAPI backend and React frontend with a single command in your project root:
 ```bash
 python run.py
 ```
@@ -146,5 +146,6 @@ npm run dev
 ## 👤 Author & Connect
 
 * **Arayana Sood**
+* **Live Website:** [https://product-pulse-nine.vercel.app/](https://product-pulse-nine.vercel.app/)
 * **LinkedIn:** [Project Post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7523055555066720256/)
 * **GitHub:** [@Arayana-sood](https://github.com/Arayana-sood)
